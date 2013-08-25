@@ -2,7 +2,7 @@ self.port.on("bookmarkGifs",function(){
     
     var url = document.URL;
 
-    if( url.slice(-4).toLowerCase() === '.gif' )
+    if( document.contentType === "image/gif" ) //url.slice(-4).toLowerCase() === '.gif' )
     {
         bookmarklet();
     }
