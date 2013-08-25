@@ -630,13 +630,13 @@ var bookmarklet = function() {
   };
 
   var imgs = to_a(document.getElementsByTagName('img'));
-  var gifs = imgs.filter(function(img) {
-    return img.src.slice(-4).toLowerCase() === '.gif';
+  var gifs = imgs;//imgs.filter(function(img) {
+  //  return img.src.slice(-4).toLowerCase() === '.gif';
     // This is a very cheap plastic imitation of checking the MIME type -- I've
     // seen GIFs with no extension (or, even worse, ending in .jpg). I can't
     // see a good way of figuring out if an image is a GIF, though, so this
     // will have TODO for now.
-  });
+  //});
   // Partial workaround: If there were no .gif images, we'll just try all the <img> tags.
   //if (gifs.length === 0) gifs = imgs;
 
@@ -717,8 +717,7 @@ bookmarklet();
 */
 // END_NON_BOOKMARKLET_CODE
 
-var url = document.URL;
-if( url.slice(-4).toLowerCase() === '.gif' )
-{
-	bookmarklet();
-}
+if( document.contentType === "image/gif" ) //url.slice(-4).toLowerCase() === '.gif' )
+    {
+        bookmarklet();
+    }
