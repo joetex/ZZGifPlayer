@@ -1,0 +1,50 @@
+{
+ "enable_e10s": false, 
+ "is-sdk-bundled": true, 
+ "jetpackID": "jid0-AsEtBwC86O2aYN7hqMefrquv9ls@jetpack", 
+ "loader": "addon-sdk/lib/sdk/loader/cuddlefish.js", 
+ "main": "main", 
+ "mainPath": "zzgif/main", 
+ "manifest": {
+  "zzgif/main": {
+   "docsSHA256": null, 
+   "jsSHA256": "045da5b1964fdab9a1ccdb13617412a45791e57676d72c317e62f5656c8e7269", 
+   "moduleName": "main", 
+   "packageName": "zzgif", 
+   "requirements": {
+    "sdk/page-mod": "sdk/page-mod", 
+    "sdk/self": "sdk/self", 
+    "tabs": "sdk/tabs", 
+    "widget": "sdk/widget"
+   }, 
+   "sectionName": "lib"
+  }
+ }, 
+ "metadata": {
+  "addon-sdk": {
+   "description": "Add-on development made easy.", 
+   "keywords": [
+    "javascript", 
+    "engine", 
+    "addon", 
+    "extension", 
+    "xulrunner", 
+    "firefox", 
+    "browser"
+   ], 
+   "license": "MPL 2.0", 
+   "name": "addon-sdk"
+  }, 
+  "zzgif": {
+   "author": "OneEyed", 
+   "description": "When you Right-Click and select View Image to a GIF, it will load it with this GIF Player.  \n\nControls:\nClick to Pause/Play\nMouse Scroll to Reverse/Forward frame-by-frame\nCtrl+Click to play Reverse/Forward\nShift+Mouse Scroll to speed Down/Up \n\nBuilt with:\nJSGIF - http://slbkbs.org/jsgif/\nMozilla Add-on Builder", 
+   "main": "main", 
+   "name": "zzgif", 
+   "version": "1.0.rev163"
+  }
+ }, 
+ "name": "zzgif", 
+ "sdkVersion": "1.14", 
+ "staticArgs": {}, 
+ "verbose": false
+}
